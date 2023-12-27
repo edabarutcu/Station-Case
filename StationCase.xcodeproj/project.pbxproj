@@ -13,6 +13,10 @@
 		5356851E2B399BA600B99940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5356851C2B399BA600B99940 /* Main.storyboard */; };
 		535685202B399BA800B99940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5356851F2B399BA800B99940 /* Assets.xcassets */; };
 		535685232B399BA800B99940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535685212B399BA800B99940 /* LaunchScreen.storyboard */; };
+		53B762A12B3C862E00983F77 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B762A02B3C862E00983F77 /* HTTPMethod.swift */; };
+		53B762A32B3C866700983F77 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B762A22B3C866700983F77 /* Endpoint.swift */; };
+		53B762A62B3C884C00983F77 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B762A52B3C884C00983F77 /* HTTPClient.swift */; };
+		53B762A82B3C886A00983F77 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B762A72B3C886A00983F77 /* RequestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5356851F2B399BA800B99940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535685222B399BA800B99940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535685242B399BA800B99940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B762A02B3C862E00983F77 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		53B762A22B3C866700983F77 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		53B762A52B3C884C00983F77 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		53B762A72B3C886A00983F77 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		535685152B399BA600B99940 /* StationCase */ = {
 			isa = PBXGroup;
 			children = (
+				53B7629E2B3C85DF00983F77 /* Network */,
+				53B762A42B3C869800983F77 /* Models */,
 				535685162B399BA600B99940 /* AppDelegate.swift */,
 				535685182B399BA600B99940 /* SceneDelegate.swift */,
 				5356851A2B399BA600B99940 /* ViewController.swift */,
@@ -65,6 +75,32 @@
 				535685242B399BA800B99940 /* Info.plist */,
 			);
 			path = StationCase;
+			sourceTree = "<group>";
+		};
+		53B7629E2B3C85DF00983F77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				53B7629F2B3C85F900983F77 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		53B7629F2B3C85F900983F77 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				53B762A22B3C866700983F77 /* Endpoint.swift */,
+				53B762A02B3C862E00983F77 /* HTTPMethod.swift */,
+				53B762A52B3C884C00983F77 /* HTTPClient.swift */,
+				53B762A72B3C886A00983F77 /* RequestError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		53B762A42B3C869800983F77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B762A82B3C886A00983F77 /* RequestError.swift in Sources */,
+				53B762A12B3C862E00983F77 /* HTTPMethod.swift in Sources */,
 				5356851B2B399BA600B99940 /* ViewController.swift in Sources */,
+				53B762A62B3C884C00983F77 /* HTTPClient.swift in Sources */,
 				535685172B399BA600B99940 /* AppDelegate.swift in Sources */,
 				535685192B399BA600B99940 /* SceneDelegate.swift in Sources */,
+				53B762A32B3C866700983F77 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
